@@ -7,9 +7,7 @@ class Solution {
             return x;
         }
         if (n < 0) {
-            /**
-             * -(n + 1) is done to avoid int overflow.
-             */
+           
             return (1 / x) * myPow(1 / x, -(n + 1));
         }
         return n % 2 == 0 ? myPow(x * x, n / 2) : x * myPow(x * x, n / 2);
